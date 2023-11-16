@@ -1,0 +1,8 @@
+.titulo, .subtitulo, .sobre, .sobremim, .contato, .redes, .tituloskills, .descricaoskills, .minhafoto, .imagemskills{
+    visibility: hidden;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}

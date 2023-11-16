@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-image: url(imagens/sessao1/sessao1.png);
+}
+
+/*Cabecalho */
+
+.cabecalho {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.cabecalhotitulo {
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.cabecalhotitulo span {
+  color: rgb(39, 133, 255);
+}
+
+.botaomenu {
+  color: #ffffff;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+  margin-right: 45px;
+  cursor: pointer;
+}
+
+.botaomenu:hover {
+  color: rgb(39, 133, 255);
+  transition: 0.5s;
+}
+
+/* Pagina 1 - Home*/
+
+.conteudoprincipal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.conteudotitulo {
+  padding-top: 100px;
+  padding-left: 30px;
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.titulo {
+  font-size: 40px;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.titulo span {
+  color: rgb(39, 133, 255);
+}
+
+.titulodescricao {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 100;
+  margin-top: 5px;
+}
+
+.subtitulo {
+  font-size: 25px;
+  color: rgb(39, 133, 255);
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.imagem {
+  height: 300px;
+  cursor: pointer;
+  position: relative;
+  animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 30px;
+  }
+}
+
+/* Pagina 2 - About */
+
+section {
+  display: flex;
+  align-items: center;
+  padding: 30px 15%;
+  justify-content: space-between;
+  min-height: 100vh;
+  box-shadow: 0 0 40px 10px #333232;
+}
+
+.minhafoto {
+  height: 300px;
+  border: solid 4px #ffffff;
+}
+
+.sobretotal {
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+  background-image: url(imagens/sessao2/sessao2.png);
+}
+
+.sobre {
+  color: #ffffff;
+  font-size: 45px;
+  text-align: center;
+}
+
+.sobremim {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 100;
+  margin-top: 20px;
+}
+
+/* Pagina 3 - Skills*/
+
+.skills {
+  display: flex;
+  flex-direction: row;
+  background-image: url(imagens/sessao3/sessao3.png);
+}
+
+.tituloskills {
+  color: #ffffff;
+  font-size: 45px;
+  text-align: center;
+}
+
+.descricaoskills {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 100;
+  margin-top: 20px;
+}
+
+.imagemskills {
+  height: 300px;
+}
+
+/* Pagina 4 - Contato */
+
+.contato {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(imagens/sessao2/sessao2.png);
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  z-index: 1;
+}
+
+.container .card {
+  position: relative;
+  width: 200px;
+  height: 400px;
+  margin: 30px;
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  border-top: 4px solid rgb(255, 255, 255);
+  border-left: 4px solid rgb(255, 255, 255);
+  border-right: 4px solid rgb(255, 255, 255);
+  border-bottom: 4px solid rgb(255, 255, 255);
+}
+
+.container .card .content {
+  text-align: center;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.container .card:hover .content {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.titulocontato {
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 30px;
+  font-weight: 200;
+}
+
+.img {
+  max-width: 280px;
+  max-height: 280px;
+}
+
+.botaoperfil {
+  text-align: center;
+  text-decoration: none;
+  align-items: center;
+  padding: 8px 20px;
+  margin-top: 15px;
+  background-color: rgb(39, 133, 255);
+  color: black;
+  border-radius: 10px;
+}
+
+.botaoperfil:hover {
+  padding: 10px 30px;
+  background-color: white;
+  transition: 0.5s;
+  font-size: 20px;
+}
